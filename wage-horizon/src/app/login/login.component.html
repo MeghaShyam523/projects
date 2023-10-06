@@ -1,0 +1,28 @@
+
+<div class="login-container">
+
+    <div class="logo">Wage Horzin</div>
+    <div class="desc">our ultimate destination for all your HR and Administrative solutions. A software system designed specifically to help you bring an organized guided process to meet all your HR needs.
+        Employee In-services & Competency evaluation module, Compliance training & Continuing education.
+    </div>
+    <div class="login-form">
+        <div class="from-group">
+            <label for="uname"> Username </label>
+            <input type="text"
+             name="uname" 
+             class="form-control"
+            [(ngModel)]="username"/>
+        </div>
+        <div class="from-group">
+            <label for="pwd"> Password </label>
+            <input type="Password" 
+             name="pwd" 
+             class="form-control" 
+             [(ngModel)]="password"/>
+        </div>
+        <div class="btn-container">
+            <div class="error">{{ errorMsg }}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
